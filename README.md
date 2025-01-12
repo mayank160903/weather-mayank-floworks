@@ -10,10 +10,10 @@ To access the application locally, follow the steps given below.
   - Create a .env file
   - Add your openWeatherMaps API Key from the [open weather maps API website](https://openweathermap.org/current)
   - Add the following API_KEY ```NEXT_PUBLIC_API_KEY=your_api_key ```
-  - Open `weather-floworks` directory in terminal and run following command.
-> - ```cd weather-floworks```
+  - Open `weather-mayank-floworks` directory in terminal and run following command.
+> - `cd weather-mayank-floworks`
   - Run the Following commands in terminal to install packages
-> - ``` npm i ```
+> - ` npm i `
 
 
 ## Getting Started
