@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'custom-image': "url('https://cdn.vectorstock.com/i/1000v/07/81/seamless-weather-forecast-background-vector-2000781.jpg')"
+      }
     },
   },
   plugins: [],
