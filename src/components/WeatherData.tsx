@@ -1,13 +1,12 @@
-// import weatherData from "../actions/weatherData";
+import weatherData from "../actions/weatherData";
 import React, { useState } from "react";
 
-
+import Results from "./Results";
 import Navbar from "./Navbar";
 import Image from "next/image";
 import spinner from "../../public/loading.gif";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapLocation, faSun } from "@fortawesome/free-solid-svg-icons";
-import Results from "./Results";
 
 const WeatherData: React.FC = () => {
   // State variables to handle the input data, errors and loading states.
@@ -24,14 +23,13 @@ const WeatherData: React.FC = () => {
     setError("");
     setWeather(null);
     try {
-      const response = await fetch(`/api/weather?city=${city}&lat=${latitude}&lon=${longitude}`);
-      const data = await response.json();
-      if (!response.ok) {
-        setError("Error fetching data");
+      const response = await weatherData(city, latitude, longitude);
+      if (response.error) {
+        setError(response.message);
         setLoading(false);
         return;
       } else {
-        setWeather(data);
+        setWeather(response.data);
         setLoading(false);
       }
     } catch (err) {
