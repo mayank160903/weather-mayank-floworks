@@ -1,6 +1,7 @@
 # Mayank's Assignment Submission - Floworks
 
 > - View the assignment Hosted on Vercel : [visit Vercel Link](https://weather-mayank-floworks.vercel.app/)
+> - GitHub Repository Link : [Open GitHub Repository](https://github.com/mayank160903/weather-mayank-floworks)
 
 ## Installation and Run Application
 To access the application locally, follow the steps given below.
